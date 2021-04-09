@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Project akhir | ADE FIRMANSYAH</title>
+	<link id="style" rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<section>
+
+		<!-- navbar -->
+		<nav>
+			<a href="#" class="logo">Final Foundation Project</a>
+			<ul>
+				<button onclick='toggleStyle()'>Dark/Light</button>
+
+    <script type='text/javascript'>
+
+        var cssStyle = document.getElementById('style');
+        var listStyles = ["style.css", "style2.css"];
+    
+        window.onload = function(){
+            if(localStorage && localStorage.getItem("style"))
+                cssStyle.href = localStorage.getItem("style");
+        };
+    
+        function toggleStyle(){
+            var previousStyle = cssStyle.href;
+    
+            if(previousStyle.endsWith(listStyles[0]))
+                newStyle = listStyles[1];
+            else
+                newStyle = listStyles[0];
+    
+            cssStyle.href = newStyle;
+    
+            if(localStorage)
+                localStorage.setItem("style", newStyle);
+        };
+    </script>
+
+
+				<li><a href="contact.html" class="opsi">Contact me</a></li>
+			</ul>
+		</nav>
+
+		<!-- text header Banner -->
+		<div class="text-container">
+			<p class="text1">HI,</p>
+			<p class="text1">I'M ADE FIRMAN,</p>
+			<P class="text2">WELCOME TO <br>MY FINAL FOUNDATION PROJECT</P>
+		</div>
+	</section>
+
+		<!-- Tentang -->
+		<div class="tentang-container">
+			<img src="image/foto.png">
+			<div class="tentang-text">
+				<p>About me :</p>
+				<p>Glint academy candidate student's</p>
+				<p>HI! My name is <strong>Ade Firmansyah,</strong> you can call me Ade. I was born in Sumbawa Besar, March 27 2002 (19 years old).
+				</p>
+				<p>My name is Ade Firmansyah, i was born in Sumbawa Regency on 27 of March 2002. I have graduated from the national vocational high school a year ago. I have computer technicians workshop + sort term work for 3 month in high school, the workshop location is in Mataram city. I have a huge passion for technology especially computer. It's started when i was in fourth grade of elementary school, my parents bought me a laptop and in that point of time i started to learn computer and i like it so much. That is the main reason why i'm here at this academy. If I'm welcomed to be a part of this academy, I will do my best.
+				Thank you.</p>
+			</div>
+		</div>
+
+
+		<!--- EDUKASI -->
+		<div class="services">
+			<div class="services-text">
+				<p>Timeline Education</p>
+				<p><strong>Here you can check out my Education path</strong></p>
+				<p>* * * *</p>
+			</div>
+		
+
+			<div class="box-container">
+				<div class="box-1">
+					<span><img src="image/sd.png"></span>
+					<p class="heading">SD Negeri 32 Cakranegara</p>
+					<p class="details">Location at Brawijaya Street, no. 32, Mandalika, Sandubaya, Lombok, West Nusa Tenggara.
+					Attended school from 2009-2014.</p>
+					<button class="view"><a href="https://www.google.com/maps/place/Sekolah+Dasar+Negeri+32+Cakranegara/@-8.5944207,116.1434642,17z/data=!3m1!4b1!4m5!3m4!1s0x2dcdb8b025701aef:0x82be696760e1b21a!8m2!3d-8.5944207!4d116.1456529?hl=en">View Location</button></a>
+				</div>
+				<div class="box-2">
+					<span><img src="image/smp.png"></span>
+					<p class="heading">SMP Negeri 1 Brang Rea</p>
+					<p class="details">Location at Baso Busing Street, no. 33, Desa Beru, Brang Rea, West Sumbawa,  West Nusa Tenggara.
+					Attended school from 2014-2017.</p>
+					<button class="view"><a href="https://www.google.com/maps/place/Smp+Negeri+1+Brang+Rea/@-8.7306076,116.9059129,18.81z/data=!4m5!3m4!1s0x2dcc6433a57d67c1:0x2f138dcbd6bfbfdf!8m2!3d-8.7307066!4d116.9064956?hl=en">View Location</button></a>
+				</div>
+				<div class="box-3">
+					<span><img src="image/sma.png"></span>
+					<p class="heading">SMK Negeri 1 Taliwang</p>
+					<p class="details">Location at Brawijaya Street, no. 32, Cakranegara, Lombok, Nusa Tenggara Barat.
+					Attended school from 2017-2020.</p>
+					<button class="view"><a href="https://www.google.com/maps/place/SMK+Negeri+1+Taliwang/@-8.7429968,116.8266117,17z/data=!3m1!4b1!4m5!3m4!1s0x2dcc670e2e01e589:0xca0dfd65a5ff18af!8m2!3d-8.7429968!4d116.8288004?hl=en">View Location</button></a>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- WORK EXPERIENCE -->
+		<div class="work">
+			<p>WORK EXPERIENCE<br></p>
+			<p>Here you can check out my Work Experience.<br>
+			But actually it's not a work, it's just my intership when i was in National Vocational High School<br>
+			Hope you guys can understand it.</p>
+			<p>February - May, 2017.<br>
+			Location at <span>Amman Mineral Nusa Tenggara</span><br>as a <span> Customer Service for making mining driving license<br></span> for Employed </p>
+		</div>
+
+		<div class="contact-me">
+			<p>Contact Me!</p>
+			<p>If you have any question in your mind<br>
+			Please tap the Button!</p>
+			<button class="view"><a href="contact.html">Contact Me</a></button>
+		</div>
+
+		<div class="bubbles">
+			<img src="image/bubble.png">
+			<img src="image/bubble.png">
+			<img src="image/bubble.png">
+			<img src="image/bubble.png">
+			<img src="image/bubble.png">
+			<img src="image/bubble.png">
+		</div>
+
+
+
+		<!-- FOOTER -->
+		<footer>
+			<p>Foundation Final Project</p>
+			<P>Junior Programmer, Glint's Academy Candidate Student's.<br>
+			Desa Tepas, Kec. Brang Rea, Kab. Sumbawa Barat, Nusa Tenggara Barat.</P>
+
+			<div class="social-icon">
+				<a href="https://web.facebook.com/ade.gunners.27"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://bit.ly/2Qel0Hi"><i class="fab fa-whatsapp"></i></a>
+				<a href="https://github.com/AdeFirman27"><i class="fab fa-github"></i></a>
+				<a href="https://instagram.com/ecto.ade_?igshid=17076ktp18q8h"><i class="fab fa-instagram"></i></a>
+			</div>
+
+			<p class="copyright">- Ade firmansyah, Junior Programmer -</p>
+		</footer>
+
+
+		<!-- SIDEBAR SISMED -->
+		<div class="a-social-b">
+				<a href="https://web.facebook.com/ade.gunners.27"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://bit.ly/2Qel0Hi"><i class="fab fa-whatsapp"></i></a>
+				<a href="https://github.com/AdeFirman27"><i class="fab fa-github"></i></a>
+				<a href="https://instagram.com/ecto.ade_?igshid=17076ktp18q8h"><i class="fab fa-instagram"></i></a>
+		</div>
+
+</body>
+</html>
